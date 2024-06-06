@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wealthome</title>
+    <!-- primary meta tags -->
+    <meta name="title" content="Wealthome" />
+    <meta
+      name="description"
+      content="This is a realestate website devloped by gokul modi"
+    />
+    <!-- google font link -->
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font icon link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- js link -->
+    <script src="./assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.png"
+            width="190"
+            height="28"
+            alt="logo"
+          />
+        </a>
+
+        <nav class="navbar active" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link-medium active">Home</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link-medium">Rent</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link-medium">Sell</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link-medium">But</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link-medium">About</a>
+            </li>
+          </ul>
+
+          <div class="navbar-wrapper">
+            <a class="btn-link labal-medium">Login</a>
+            <a class="btn btn-outline labal-medium">Get Started</a>
+          </div>
+        </nav>
+
+        <button
+          class="nav-toggle-btn icon-btn"
+          aria-label="toggle navbar"
+          data-nav-toggler
+        >
+          <span class="material-symbols-rounded open" aria-hidden="true"
+            >menu</span
+          >
+          <span class="material-symbols-rounded close" aria-hidden="true"
+            >close</span
+          >
+        </button>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <article>
+        <!-- hero section -->
+        <section class="hero">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="headline-large title-large hero-title">
+                Find a place where you can be yourself.
+              </h1>
+
+              <p class="body-large hero-text">
+                If you're looking for a place where you can be yourself, don't
+                give up. Keep searching until you find a place that feels like
+                home.
+              </p>
+
+              <form action="./" class="search-bar">
+                <label class="search-item">
+                  <span class="label-medium label">Want to</span>
+                  <select
+                    name="want-to"
+                    id=""
+                    class="search-item-field body-medium"
+                  >
+                    <option value="buy" selected>Buy</option>
+                    <option value="sell">Sell</option>
+                    <option value="rent">Rent</option>
+                  </select>
+                  <span class="material-symbols-rounded" aria-hidden="true"
+                    >real_estate_agent</span
+                  >
+                </label>
+
+                <label class="search-item">
+                  <span class="label-medium label">Property type</span>
+                  <select
+                    name="property-type"
+                    id=""
+                    class="search-item-field body-medium"
+                  >
+                    <option value="any" selected>Any</option>
+                    <option value="houses">Houses</option>
+                    <option value="apartments">Apartments</option>
+                    <option value="villa">Villa</option>
+                    <option value="townhome">Townhome</option>
+                    <option value="bungalow">Bungalow</option>
+                    <option value="loft">Loft</option>
+                  </select>
+                  <span class="material-symbols-rounded" aria-hidden="true"
+                    >gite</span
+                  >
+                </label>
+
+                <label class="search-item">
+                  <span class="label-medium label">Location</span>
+
+                  <input
+                    type="text"
+                    name="location"
+                    placeholder="Street, City, Zip ..."
+                    class="search-item-field body-medium"
+                  />
+
+                  <span class="material-symbols-rounded" aria-hidden="true"
+                    >location_on</span
+                  >
+                </label>
+
+                <button type="submit" class="search-btn">
+                  <span class="material-symbols-rounded" aria-hidden="true"
+                    >search
+                  </span>
+
+                  <span class="label-medium">Search</span>
+                </button>
+              </form>
+            </div>
+
+            <img
+              src="./assets/images/hero.png"
+              class="hero-banner"
+              alt="main"
+              width="816"
+              height="659"
+              role="presentation"
+            />
+
+            <img
+              src="./assets/images/bg-pattern.png"
+              class="bg-pattern"
+              alt="main"
+              width="1240"
+              height="840"
+              role="presentation"
+            />
+          </div>
+        </section>
+
+        <!-- property section -->
+        <section class="section property" aria-labelledby="property-label">
+         
+          <div class="container">
+            <div class="title-wrapper">
+              <div>
+                <h2 class="section-title headlin-small">
+                  Best home in your city
+                </h2>
+                <p class="section-text body-large">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem, quaerat.
+                </p>
+              </div>
+
+              <a href="#" class="btn btn-outline">
+                <span class="label-medium">Explore more</span>
+
+                <span class="material-symbols-rounded" aria-hidden="true"
+                  >arrow_outward</span
+                >
+              </a>
+            </div>
+
+            <div class="property-list">
+
+              <div class="card">
+
+                <div class="card-banner">
+                  <figure
+                    class="img-holder"
+                    style="--width: 588; --height: 3910"
+                  >
+                    <img
+                      src="./assets/images/property-1.jpg"
+                      alt=""
+                      width="585"
+                      height="390"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <span class="badge label-medium">
+                    New
+                  </span>
+
+                  <button class="icon-btn fav-btn" aria-label="add to favorite">
+                      <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                  </button>
+
+
+                </div>
+
+                <div class="card-content">
+                  <span class="title-large">$710.68</span>
+                  
+                  <h3>
+                    <a href="" class="title-small card-title">
+                      COVA Home Reality
+                    </a>
+                  </h3>
+
+                  <address class="body-medium card-text">
+                    1901 Thornridge Cir. Shiloh, Hawaii 81063
+                  </address>
+
+                  <div class="card-meta-list">
+                    <div class="meta-item">
+                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                       <span class="meta-text label-medium">3 Bed</span>
+                    </div>
+                    <div class="meta-item">
+                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                       <span class="meta-text label-medium">2 Bed</span>
+                    </div>
+                    <div class="meta-item">
+                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                       <span class="meta-text label-medium">1430 sqft</span>
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+
+              <div class="card">
+
+                <div class="card-banner">
+                  <figure
+                    class="img-holder"
+                    style="--width: 588; --height: 3910"
+                  >
+                    <img
+                      src="./assets/images/property-2.jpg"
+                      alt=""
+                      width="585"
+                      height="390"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <button class="icon-btn fav-btn" aria-label="add to favorite">
+                      <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                  </button>
+
+
+                </div>
+
+                <div class="card-content">
+                  <span class="title-large">$630.44</span>
+                  
+                  <h3>
+                    <a href="" class="title-small card-title">
+                      The Real Estate Group
+                    </a>
+                  </h3>
+
+                  <address class="body-medium card-text">
+                    2972 Westheimer Rd. Santa Ana, Illinois 85486
+                  </address>
+
+                  <div class="card-meta-list">
+                    <div class="meta-item">
+                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                       <span class="meta-text label-medium">8 Bed</span>
+                    </div>
+                    <div class="meta-item">
+                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                       <span class="meta-text label-medium">5 Bed</span>
+                    </div>
+                    <div class="meta-item">
+                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                       <span class="meta-text label-medium">1240 sqft</span>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                <div class="card-banner">
+                  <figure
+                    class="img-holder"
+                    style="--width: 588; --height: 3910"
+                  >
+                    <img
+                      src="./assets/images/property-2.jpg"
+                      alt=""
+                      width="585"
+                      height="390"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <button class="icon-btn fav-btn" aria-label="add to favorite">
+                      <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                  </button>
+
+
+                </div>
+
+                <div class="card-content">
+                  <span class="title-large">$630.44</span>
+                  
+                  <h3>
+                    <a href="" class="title-small card-title">
+                      Exit Realty
+                    </a>
+                  </h3>
+
+                  <address class="body-medium card-text">
+                    2972 Westheimer Rd. Santa Ana, Illinois 85486
+                  </address>
+
+                  <div class="card-meta-list">
+                    <div class="meta-item">
+                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">bed</span>
+                       <span class="meta-text label-medium">5 Bed</span>
+                    </div>
+                    <div class="meta-item">
+                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">bathtub</span>
+                       <span class="meta-text label-medium">4 Bed</span>
+                    </div>
+                    <div class="meta-item">
+                       <span class="material-symbols-rounded meta-icon" aria-hidden="true">straighten</span>
+                       <span class="meta-text label-medium">1630 sqft</span>
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
